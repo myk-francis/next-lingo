@@ -10,6 +10,12 @@ export default function Home() {
       <Button className="" variant={"primaryOutline"}>
         Primary outline
       </Button>
+      <Button className="" variant={"secondary"}>
+        Secondary
+      </Button>
+      <Button className="" variant={"secondaryOutline"}>
+        Secondary outline
+      </Button>
     </div>
   );
 }
