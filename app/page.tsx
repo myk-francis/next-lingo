@@ -31,6 +31,12 @@ export default function Home() {
       <Button className="" variant={"ghost"}>
         Ghost
       </Button>
+      <Button className="" variant={"sidebar"}>
+        Sidebar
+      </Button>
+      <Button className="" variant={"sidebarOutline"}>
+        Sidebar outline
+      </Button>
     </div>
   );
 }
