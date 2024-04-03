@@ -16,6 +16,12 @@ export default function Home() {
       <Button className="" variant={"secondaryOutline"}>
         Secondary outline
       </Button>
+      <Button className="" variant={"danger"}>
+        Danger
+      </Button>
+      <Button className="" variant={"dangerOutline"}>
+        Danger outline
+      </Button>
     </div>
   );
 }
