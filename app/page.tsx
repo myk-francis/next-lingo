@@ -22,6 +22,15 @@ export default function Home() {
       <Button className="" variant={"dangerOutline"}>
         Danger outline
       </Button>
+      <Button className="" variant={"super"}>
+        Super
+      </Button>
+      <Button className="" variant={"superOutline"}>
+        Super outline
+      </Button>
+      <Button className="" variant={"ghost"}>
+        Ghost
+      </Button>
     </div>
   );
 }
