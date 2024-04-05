@@ -12,7 +12,7 @@ export const Sidebar = ({ className }: Props) => {
         className
       )}
     >
-      sidebar
+      sidebar mike
     </div>
   );
 };
