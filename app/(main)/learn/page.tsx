@@ -4,9 +4,9 @@ import React from "react";
 
 const LearnPage = () => {
   return (
-    <div className="flex flex-row-reverse gap-[48px] px-6">
-      <StickyWrapper>LearnPage</StickyWrapper>
+    <div className="flex gap-[48px] px-6">
       <FeedWrapper>Feed</FeedWrapper>
+      <StickyWrapper>LearnPage</StickyWrapper>
     </div>
   );
 };
