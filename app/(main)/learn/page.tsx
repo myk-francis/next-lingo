@@ -12,7 +12,11 @@ const LearnPage = () => {
       </FeedWrapper>
       <StickyWrapper>
         <UserProgress
-          activeCourse={{}}
+          activeCourse={{
+            title: "Spanish",
+            imageSrc: "/es.svg",
+            imageAlt: "Spanish",
+          }}
           hearts={5}
           points={100}
           hasActiveSubscription={false}
