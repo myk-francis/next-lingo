@@ -2,6 +2,7 @@
 
 import { courses } from "@/db/schema";
 import React from "react";
+import { Card } from "./card";
 
 type Props = {
   courses: (typeof courses.$inferSelect)[];
@@ -9,5 +10,19 @@ type Props = {
 };
 
 export const List = ({ courses, activeCourseId }: Props) => {
-  return <div>List</div>;
+  return (
+    <div className="pt-6 grid grid-cols-2 lg:grid-cols-[repeat(autofill,minmax(210px,1fr))] gap-4">
+      {courses.map((course) => (
+        <Card
+          key={course.id}
+          id={course.id}
+          title={course.title}
+          imageSrc={course.imageSrc}
+          active={course.id === activeCourseId}
+          onClick={() => {}}
+          disabled={false}
+        />
+      ))}
+    </div>
+  );
 };
