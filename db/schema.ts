@@ -28,3 +28,13 @@ export const userProgressRelations = relations(userProgress, ({ one }) => ({
     references: [courses.id],
   }),
 }));
+
+export const units = pgTable("units", {
+  id: serial("id").primaryKey(),
+  title: text("title").notNull(), // Unit 1
+  description: text("description").notNull(), // Learn the basics of spanish
+  courseId: integer("course_id")
+    .references(() => courses.id, { onDelete: "cascade" })
+    .notNull(),
+  order: integer("order").notNull(),
+});
